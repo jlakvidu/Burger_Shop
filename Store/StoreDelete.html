@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Item</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <center><img src="../img/burger_image.png" class="img-fluid h-25" alt="burger"></center>
+                </div>
+                <div class="col-4">
+                    <center><img src="../img/chef3.png" class="img-fluid" alt="logo"></center>
+                </div>
+                <div class="col-4">
+                    <center><img src="../img/burger_image.png" class="img-fluid h-25" alt="burger"></center>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <div class="container w-auto" style="background-color: orange; padding: 10px; border-radius: 5px;">
+        <center>
+            <p id="titleText">Delete Item</p>
+        </center>
+    </div>
+
+    <hr>
+
+    <div class="row-cols-1" id="partition">
+        <div class="container">
+            <div class="d-flex mb-3">
+                <div class="p-1">
+                    <input id="search-input" class="form-control mt-4" type="text" placeholder="Search for item...">
+                </div>
+                <div class="p-1">
+                    <a href="#" class="btn btn-primary mt-4" tabindex="-1" role="button" id="search-button">Search</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <img src="../img/chef4 (1).png" class="img-fluid h-100" alt="chef">
+                </div>
+
+                <div class="col-8 mt-5">
+                    <div class="form-group row">
+                        <label for="viewItemId" class="col-sm-4 col-form-label">Item ID</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="viewItemId" readonly>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="viewName" class="col-sm-4 col-form-label">Item Name</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="viewName">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="viewDate" class="col-sm-4 col-form-label">Expire Date</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="date" id="viewDate">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="viewQty" class="col-sm-4 col-form-label">Quantity</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="number" id="viewQty">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="viewSupplier" class="col-sm-4 col-form-label">Supplier</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" id="viewSupplier">
+                        </div>
+                    </div>
+
+                    <div class="btn-container">
+                        <div class="p-1">
+                            <a href="#" class="btn btn-danger w-75" tabindex="-1" role="button" id="subBtnS" onclick="deleteItem()">Delete</a>
+                        </div>
+                        <div class="p-1">
+                            <a href="StoreMain.html" class="btn btn-secondary w-75" tabindex="-1" role="button" id="subBtnS">Back</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                  <p>&copy; @icet . All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

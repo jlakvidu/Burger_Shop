@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Customer</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-4"><center><img src="../img/burger_image.png" class="img-fluid h-25" alt="burger"></center></div>
+                <div class="col-4"><center><img src="../img/chef3.png" class="img-fluid" alt="logo"></center></div>
+                <div class="col-4"><center><img src="../img/burger_image.png" class="img-fluid h-25" alt="burger"></center></div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="container w-auto container-custom">
+        <center><p id="titleText">Delete Customer</p></center>
+    </div>
+    <hr>
+    <div class="row-cols-1" id="partition">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="p-1">
+                    <input id="search-input" class="form-control mt-4" type="text" placeholder="Enter Customer ID">
+                </div>
+                <div class="p-1">
+                    <a href="#" class="btn w-100 mt-4" tabindex="-1" role="button" id="search-button">Search</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4"><img src="../img/chef4 (1).png" class="img-fluid h-100" alt="chef"></div>
+                <div class="col-8 mt-5">
+                    <div class="form-group row">
+                        <label for="viewId" class="col-sm-4 col-form-label">Customer ID</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" placeholder="" readonly id="viewId">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="viewName" class="col-sm-4 col-form-label">Customer Name</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" placeholder="" readonly id="viewName">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="viewPhoneNum" class="col-sm-4 col-form-label">Customer Tel</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" placeholder="" readonly id="viewPhoneNum">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="viewEmail" class="col-sm-4 col-form-label">Customer Email</label>
+                        <div class="col-sm-8">
+                            <input class="form-control" type="text" placeholder="" readonly id="viewEmail">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="d-flex justify-content-end">
+                            <div class="w-25 p-1">
+                                <a href="#" class="btn w-75" tabindex="-1" role="button" id="subBtnS" onclick="deleteCustomer()">Delete</a>
+                            </div>
+                            <div class="w-25 p-1">
+                                <a href="CustomerMain.html" class="btn w-75" tabindex="-1" role="button" id="subBtnS">Back</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                  <p>&copy; @icet . All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
